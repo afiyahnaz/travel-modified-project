@@ -1,0 +1,293 @@
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "App has started running",
+    "time": "2022-06-27T13:05:34.355Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 50,
+    "err": {
+        "message": "home validation failed: checkout: Path `checkout` is required.",
+        "name": "ValidationError",
+        "stack": "ValidationError: home validation failed: checkout: Path `checkout` is required.\n    at model.Document.invalidate (C:\\Users\\Windows\\Desktop\\travel project\\node_modules\\mongoose\\lib\\document.js:2980:32)\n    at C:\\Users\\Windows\\Desktop\\travel project\\node_modules\\mongoose\\lib\\document.js:2769:17\n    at C:\\Users\\Windows\\Desktop\\travel project\\node_modules\\mongoose\\lib\\schematype.js:1333:9\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)"
+    },
+    "msg": "home validation failed: checkout: Path `checkout` is required.",
+    "time": "2022-06-27T13:05:41.831Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "Get Request made",
+    "time": "2022-06-27T13:05:48.186Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "",
+    "data": [
+        {
+            "_id": "62b9a8698a1e8f1865ecd366",
+            "name": "AfiyaaNEwh-112",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 0,
+            "createdAt": "2022-06-27T12:54:01.453Z",
+            "updatedAt": "2022-06-27T12:54:01.453Z"
+        },
+        {
+            "_id": "62b9a85a8a1e8f1865ecd362",
+            "name": "AfiyaaNEwh-112",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 20,
+            "createdAt": "2022-06-27T12:53:46.748Z",
+            "updatedAt": "2022-06-27T12:53:46.749Z"
+        },
+        {
+            "_id": "62b98e6728194fbc80d5d8a3",
+            "name": "Afiyah-112",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 0,
+            "createdAt": "2022-06-27T11:03:03.097Z",
+            "updatedAt": "2022-06-27T11:03:03.105Z"
+        },
+        {
+            "_id": "62b98e07122983573b443ac1",
+            "name": "Afiyah-12",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 0,
+            "updatedAt": "2022-06-27T11:01:27.191Z"
+        },
+        {
+            "_id": "62b98dba6b86298faecdd90b",
+            "name": "Amazon-12",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 0,
+            "updatedAt": "2022-06-27T11:00:10.912Z"
+        },
+        {
+            "_id": "62b98d2a84b1a2a897e06070",
+            "name": "Amazon",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 0,
+            "updatedAt": "2022-06-27T10:57:46.704Z"
+        },
+        {
+            "discount": 0,
+            "_id": "62b9457673972cacdd44eb76",
+            "name": "Galaxy-45",
+            "location": "Hyd-1",
+            "rooms": 4,
+            "price": 487150,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "updatedAt": "2022-06-27T13:05:48.201Z"
+        },
+        {
+            "discount": 0,
+            "_id": "62af34b2bfefff4a8f595a4d",
+            "name": "Galaxy",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "Morinig",
+            "checkout": "Night",
+            "updatedAt": "2022-06-27T13:05:48.201Z"
+        },
+        {
+            "_id": "62b9476053d68b12e42af697",
+            "name": "Galaxy-45",
+            "location": "Hyd-1",
+            "rooms": 4,
+            "price": 487150,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 20,
+            "updatedAt": "2022-06-27T13:05:48.201Z"
+        },
+        {
+            "discount": 0,
+            "_id": "62af2d90454821be3f7c26b2",
+            "name": "Galaxy",
+            "location": "chennai",
+            "rooms": 3,
+            "price": 4875,
+            "checkIN": "Morinig",
+            "checkout": "Night",
+            "updatedAt": "2022-06-27T13:05:48.201Z"
+        }
+    ],
+    "time": "2022-06-27T13:05:48.204Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "Get Request made",
+    "time": "2022-06-27T13:05:55.461Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "",
+    "data": [
+        {
+            "_id": "62b9a8698a1e8f1865ecd366",
+            "name": "AfiyaaNEwh-112",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 0,
+            "createdAt": "2022-06-27T12:54:01.453Z",
+            "updatedAt": "2022-06-27T12:54:01.453Z"
+        },
+        {
+            "_id": "62b9a85a8a1e8f1865ecd362",
+            "name": "AfiyaaNEwh-112",
+            "location": "Hyd",
+            "rooms": 4,
+            "price": 48715,
+            "checkIN": "afternoon",
+            "checkout": "Night",
+            "discount": 20,
+            "createdAt": "2022-06-27T12:53:46.748Z",
+            "updatedAt": "2022-06-27T12:53:46.749Z"
+        }
+    ],
+    "time": "2022-06-27T13:05:55.465Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "Get Request made",
+    "time": "2022-06-27T13:06:21.560Z",
+    "v": 0
+}
+{
+    "name": "FSA-HYD",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 4936,
+    "level": 30,
+    "msg": "",
+    "data": [
+        {
+            "_id": "62b9a68d0be4d4156bb37d2b",
+            "rank": "New-Thirddmmnn",
+            "location": "Dubai",
+            "TakeOff": "verfast updated",
+            "airlines": "Sharja",
+            "flightNumber": "Saumhibgf",
+            "discount": 0,
+            "createdAt": "2022-06-27T12:46:05.890Z",
+            "updatedAt": "2022-06-27T12:46:05.891Z"
+        },
+        {
+            "_id": "62b98c1956b1c410351c9716",
+            "rank": "AAhirddnn-l0kk",
+            "location": "Dubai-5",
+            "TakeOff": "verfast updated",
+            "airlines": "Sharja",
+            "flightNumber": "Sauibgf",
+            "discount": 0,
+            "createdAt": "2022-06-27T10:53:13.999Z",
+            "updatedAt": "2022-06-27T10:53:14.001Z"
+        }
+    ],
+    "time": "2022-06-27T13:06:21.565Z",
+    "v": 0
+}
+{
+    "name": "TravelProject",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 2580,
+    "level": 30,
+    "msg": "App has started running",
+    "time": "2022-06-27T13:09:31.184Z",
+    "v": 0
+}
+{
+    "name": "TravelProject",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 2580,
+    "level": 30,
+    "msg": "Get Request made",
+    "time": "2022-06-27T13:09:35.421Z",
+    "v": 0
+}
+{
+    "name": "TravelProject",
+    "hostname": "DESKTOP-6AUO1EN",
+    "pid": 2580,
+    "level": 30,
+    "msg": "",
+    "data": [
+        {
+            "_id": "62b9a68d0be4d4156bb37d2b",
+            "rank": "New-Thirddmmnn",
+            "location": "Dubai",
+            "TakeOff": "verfast updated",
+            "airlines": "Sharja",
+            "flightNumber": "Saumhibgf",
+            "discount": 0,
+            "createdAt": "2022-06-27T12:46:05.890Z",
+            "updatedAt": "2022-06-27T12:46:05.891Z"
+        },
+        {
+            "_id": "62b98c1956b1c410351c9716",
+            "rank": "AAhirddnn-l0kk",
+            "location": "Dubai-5",
+            "TakeOff": "verfast updated",
+            "airlines": "Sharja",
+            "flightNumber": "Sauibgf",
+            "discount": 0,
+            "createdAt": "2022-06-27T10:53:13.999Z",
+            "updatedAt": "2022-06-27T10:53:14.001Z"
+        }
+    ],
+    "time": "2022-06-27T13:09:35.437Z",
+    "v": 0
+}

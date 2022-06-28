@@ -2,12 +2,38 @@ const four = require('../model/carModel');
 
 
 
-const get = () =>{
-    return four.find({},{_v:0});
+const get = (options) =>{
+
+
+    const {page, pageSize, sort, dir} =options;
+
+    let direction;
+    
+    switch(dir.toLowerCase()){
+        case 'asc' :
+            direction = 1;
+            break;
+        case 'desc' :
+            direction = -1;
+            break;
+        default:
+            direction = 1;
+            break;
+
+    };
+    return four
+    .find({},{__v:0})
+    .sort({[sort]: direction})
+    .skip((page-1)*pageSize)
+    .limit(pageSize);
+};
+
+const getCount = () =>{
+    return four.count();
 };
 
 const getById =(id) =>{
-    return four.findOne({_id:id},{_v: 0});
+    return four.findOne({_id:id},{__v: 0});
 };
 
 const create = (body) =>{
@@ -37,6 +63,7 @@ const patch = (id,body) =>{
 
 module.exports = {
     get,
+    getCount,
     getById,
     create,
     remove,

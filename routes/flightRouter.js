@@ -4,6 +4,7 @@ const router = express.Router();
 
 
 router.get('/',flightCtrl.get);
+router.get('/page/:page/size/:size',flightCtrl.get);
 
 router.get('/:id',flightCtrl.getById);
 

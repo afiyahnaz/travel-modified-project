@@ -5,11 +5,14 @@ const Schema = mongoose.Schema;
 
 const hotelSchema = new Schema({
 
-    name:String,
-    location:String,
-    carNumber:String,
-    price:Number,
-   persons:String,
+    name:{type:String, required: true},
+    location:{type:String, required: true},
+    carNumber:{type:String, required: true},
+    price:{type:Number, required: true},
+   persons:{type:String, required: true},
+   discount:{type:Number, default: 0},
+   createdAt:{ type: Date},
+   updatedAt:{ type:Date, default: Date.now}
 
 });
 

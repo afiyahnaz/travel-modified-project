@@ -4,6 +4,7 @@ const router = express.Router();
 
 
 router.get('/',hotelCtrl.get);
+router.get('/page/:page/size/:size',hotelCtrl.get);
 router.get('/:id',hotelCtrl.getById);
 router.post('/',hotelCtrl.post);
 router.delete('/:id',hotelCtrl.remove);

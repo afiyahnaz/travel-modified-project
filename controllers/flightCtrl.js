@@ -1,11 +1,55 @@
 flightRepositories = require('../repositories/flightRepositories');
 
+const logger = require('../utils/appLogger');
+
+
+const getOptions = (req) => {
+    const pageSize = +req.params.size || 10;
+    const page = +req.params.page || 1;
+
+  
+    let sort = req.query.sort;
+    let dir = req.query.dir || '';
+
+    if(!sort){
+        sort = 'updatedAt';
+    if(!dir){
+        dir = 'DESC'
+         }
+  }
+
+     return {
+        page, 
+        pageSize, 
+        sort,
+         dir
+         
+     };
+
+}
 
 const get = async(req,res) =>{
+    logger.info('Get Request made');
     try{
-        const fly = await flightRepositories.get();
-        res.status(200);
-        res.json(fly);
+        const options =  getOptions(req);
+        const data = await flightRepositories.get(options );
+        const totalRecords = await flightRepositories.getCount();
+        const totalPages = Math.ceil( totalRecords / options.pageSize);
+        const response = {
+            metadata:{
+                totalRecords,
+                totalPages,
+
+            },
+        
+            data
+
+        };
+        logger.info({msg:'data successfully fetched',data: data});
+     
+            res.status(200);
+            res.json(response);
+       
     }catch(err){
         res.status(500);
         res.send('Internal error');
@@ -17,6 +61,10 @@ const get = async(req,res) =>{
 const getById = async (req, res) =>{
     const id = req.params.id;
     const fly = await  flightRepositories.getById(id);
+  
+    const jsonFlight = fly.toJSON();
+    jsonFlight.reviews = reviews;
+
     res.status(200);
     res.json(fly);
 };
@@ -25,13 +73,15 @@ const getById = async (req, res) =>{
 //POST http://localhost/api/flight
 const post = async(req,res) =>{
     try{
+        req.body.createdAt = new Date();
         await flightRepositories.create(req.body);
         res.status(201);
         res.send();
     }catch(err){
+        logger.error(err);
         if(err && err.message.indexOf('validation failed') >-1){
-            res.status(500);
-            res.send('Internal Server error');  
+            res.status(400);
+            res.send('err');  
         } else{
             res.status(500);
             res.send(err);
