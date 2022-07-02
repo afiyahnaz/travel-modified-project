@@ -45,7 +45,7 @@ app.listen(PORT,()=>{
 
 logger.info('App has started running');
 
-mongoose.connect(config.dbConStr, (err,result)=>{
+mongoose.connect(config. dbConStrTravel, (err,result)=>{
   if(!err)  console.log('connected to db');
   else      console.log(err);
 });

@@ -1,8 +1,8 @@
 const config ={
-    // dbConStr:'mongodb://localhost:27017/hotels'
-//    dbConStr:'mongodb+srv://travel:travel@cluster0.posroin.mongodb.net/hotels'
-//   sumaiahnaz@gmail.com
-   dbConStr:process.env.dbConStr
+    // dbConStrTravel:'mongodb://localhost:27017/travel'
+    // dbConStrTravel:'mongodb+srv://travel:travel@cluster0.5vgvmam.mongodb.net/travel'
+//   sumaiahnaz17@gmail.com
+    dbConStrTravel:process.env.dbConStrTravel
 
 };
 
