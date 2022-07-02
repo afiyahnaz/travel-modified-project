@@ -13,6 +13,7 @@ const homeRouter = require('./routes/homeRouter');
 const flightRouter = require('./routes/flightRouter');
 const hotelRouter = require('./routes/hotelRouter');
 const carRouter = require('./routes/carRouter');
+const reviewRouter = require('./routes/reviewRouter');
 const config = require('./config/index');
 const logger = require('./utils/appLogger');
 
@@ -60,3 +61,4 @@ app.use('/',homeRouter);
 app.use('/api/flight',flightRouter);
 app.use('/api/hotel',hotelRouter);
 app.use('/api/car',carRouter);
+app.use('/api/review', reviewRouter);

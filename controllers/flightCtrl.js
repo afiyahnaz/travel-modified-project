@@ -1,5 +1,5 @@
 flightRepositories = require('../repositories/flightRepositories');
-
+const reviewRepositories = require('../repositories/reviewRepositories');
 const logger = require('../utils/appLogger');
 
 
@@ -61,12 +61,13 @@ const get = async(req,res) =>{
 const getById = async (req, res) =>{
     const id = req.params.id;
     const fly = await  flightRepositories.getById(id);
-  
+    const reviews = await reviewRepositories.getReviewsByProductId(id);
+    //  console.log(reviews);
     const jsonFlight = fly.toJSON();
     jsonFlight.reviews = reviews;
-
-    res.status(200);
-    res.json(fly);
+     
+      res.status(200);
+      res.json(jsonFlight);
 };
 
 

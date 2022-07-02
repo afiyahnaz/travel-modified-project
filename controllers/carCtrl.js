@@ -1,4 +1,5 @@
 carRepositories = require('../repositories/carRepositories');
+const reviewRepositories = require('../repositories/reviewRepositories');
 const logger = require('../utils/appLogger');
 
 
@@ -56,8 +57,15 @@ const get = async(req,res) =>{
 const getById = async (req, res) =>{
     const id = req.params.id;
     const top = await  carRepositories.getById(id);
+    const reviews = await reviewRepositories.getReviewsByProductId(id);
+    // console.log(reviews);
+
+    
+    const jsonProduct = top.toJSON();
+    jsonProduct.reviews = reviews;
+    
     res.status(200);
-    res.json(top);
+    res.json( jsonProduct);
 };
 
 //POST http://localhost/api/flight
